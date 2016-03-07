@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Slot Shop</title>
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        
+        <!-- BootStrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="/slotsshop/css/main.css">
+        
+        <!--Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Amaranth:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        
+    </head>
+    <body>
+         <!-- Header -->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+               <div class="navbar-header">
+                    <div class="pull-left">
+                        <a href="/slotsshop"><img src="logo_slot3.svg" alt="logo"></a>
+                    </div>
+                    <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+               </div>
+                <!--Nav secciones-->
+                <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+                    <li><a href='/slotsshop'>Noticias</a></li>
+                    <li><a href="#" class="dropdown-toggle" id="menu-comp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Competici&oacute;n<span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="menu-comp">
+                            <li><a href="#">Circuito</a></li>
+                            <li><a href="#">Rally</a></li>
+                            <li><a href="#">Raid</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='/slotsshop/contacto.html'>Contacto</a></li>
+                </ul>
+              
+                <hr class="hidden-sm-down">
+                <br>
+                
+                <!--Nav productos-->
+                <ul class='nav nav-pills nav-justified collapse navbar-collapse'>
+                    <li><a class="anchor" href='/slotsshop/tienda.html#ninco'>Ninco</a></li>
+                    <li><a class="anchor" href='/slotsshop/tienda.html#slotit'>Slot.it</a></li>
+                    <li><a class="anchor" href='/slotsshop/tienda.html#scalextric'>Scalextric</a></li>
+                    <li><a class="anchor" href='/slotsshop/tienda.html#circuitos'>Circuitos</a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" id="menu-cars" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Coches<span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="menu-cars">
+                            <li><a class="anchor" href="/slotsshop/tienda.html#coches">Circuito</a></li>
+                            <li><a class="anchor" href="/slotsshop/tienda.html#coches">Rally</a></li>
+                            <li><a class="anchor" href="/slotsshop/tienda.html#coches">Raid</a></li>
+                        </ul>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+        <!--FIN Header-->
+        
+        <div id="cover"></div>
+        
+        <div class="container">
+             
+            <!--Welcome Message -->
+           <div class="row well well-lg well-alpha">
+               <div class="page-header">
+                   <h2>Bienvenido a Slot Shop <small>Tienda Oficial Scalectrix</small></h2>
+               </div>        
+                <p>Aqu&iacute; encontrar&aacute;s todas las noticias del mundo del scalectrix actualizadas en cada momento. No olvides pasar por nuestra tienda y echar un vistazo a nuestros &uacute;ltimos productos.</p>       
+           </div>
+           <!--News row -->
+           <div class="row">
+                <a href="/slotsshop/news/first.html">
+                    <div class="col-md-4 noticia">
+                        <div class="well well-lg">
+                            <div class="col-xs-3 col-md-12 hidden-xs news-top">
+                                <div class="thumbnail">
+                                    <img src="noticia1/barrios-entrevista.jpg" alt="imagen-noticia1">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-9 col-md-12 noticia-titulo">
+                                <h4><small>Entrevista More Than Slot</small><br>
+                                    Attila Barrios, MTS owner
+                                </h4>
+                                <hr>
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-9 col-md-12 noticia-content">
+                                <p>Pr&oacute;ximos MTS Collection: Brabham BT52 y McLaren MP4/2</p>
+                                <p>Nueva "Virus Collection"" que empieza con un Aston Martin DB3S y el Jaguar XJ12C</p>
+                                <p>
+                                    More Than Slot irrumpi&oacute; en la escena del Slot con una apuesta claramente diferenciada de idea de negocio on-line. 
+                                    Una oferta de producto destinado a coleccionistas con un perfil muy espec&iacute;fico, donde la historia del automovilismo
+                                    deportivo tiene un componente primordial. 
+                                </p>
+                            </div>
+                            <div class="noticia-more pull-right">
+                                Seguir leyendo <span class="glyphicon glyphicon-arrow-right"></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                    </div>
+                </a>
+                <a href="/slotsshop/news/second.html">
+                    <div class="col-md-4 noticia">
+                        <div class="well well-lg">
+                            <div class="col-xs-3 col-md-12 hidden-xs news-top">
+                            <div class="thumbnail">
+                                <img src="noticia2/bmw-m1.jpg" alt="imagen-noticia2" class="center">
+                            </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-9 col-md-12 noticia-titulo">
+                                <h4><small>El segundo M1 PROCAR a escala 1:24</small><br>
+                                    BMW M1 Procar Regazzoni<span class="hidden-md">/CARRERA</span>
+                                </h4>
+                                <hr>
+                            </div>
+                            <div class="col-xs-12 col-sm-9 col-md-12 noticia-content">
+                                <p>Despu&eacute;s de que el primer BMW M1 Procar a escala 1:24 de Carrera se demorase unos meses, de hecho se puso a la venta la semana pasada, 
+                                    ahora la marca austr&iacute;aca parece que quiere recuperar el tiempo perdido y acaba de acelerar la salida del segundo BMW M1 Procar.</p>
+                                
+                                <p>En esta ocasi&oacute;n se reproduce el coche con el que Clay Regazzoni disput&oacute; la primera temporada, 1979, de este campeonato monomarca promovido 
+                                    por BMW y que consigui&oacute; convocar a los grandes pilotos de la F1.</p>
+
+                            </div>
+                            <div class="noticia-more pull-right">
+                                Seguir leyendo <span class="glyphicon glyphicon-arrow-right"></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/slotsshop/news/third.html">
+                    <div class="col-md-4 noticia">
+                        <div class="well well-lg">
+                            <div class="col-xs-3 col-md-12 hidden-xs news-top">
+                                <div class="thumbnail">
+                                    <img src="noticia3/ninco-3.jpg" alt="imagen-noticia3">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-9 col-md-12 noticia-titulo">
+                                <h4><small>El complejo retorno</small><br>
+                                    NINCO 2016
+                                </h4>
+                                <hr>
+                            </div>
+                            <div class="col-xs-12 col-sm-9 col-md-12 noticia-content">
+                                <p>En las instalaciones de Ninco en Cornell&agrave; se alinean perfectamente ordenados los cientos de moldes, toneladas de moldes, de todos los modelos de la marca. 
+                                    Es un laborioso trabajo de verificaci&oacute;n y comprobaci&oacute;n de todos y cada uno de los bloques que permiten completar un coche. Para hacer una idea, 
+                                    un molde para los discos de freno o de un espejo retrovisor puede pesar alrededor de los 70 kg. Y as&iacute; para todas y cada una de las piezas de cada coche. 
+                                    Hay que recordar por ejemplo que Ninco no repiti&oacute; nunca un espejo retrovisor, ni un bacquet, ni una jaula de seguridad, ni..., ni...
+ 
+                                </p>
+                            </div>
+                            <div class="noticia-more pull-right">
+                                Seguir leyendo <span class="glyphicon glyphicon-arrow-right"></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+    </body>
+</html>
+
+
+
+     <!--<div class="col-md-4">
+            <img src="noticia1/barrios-entrevista.jpg" alt="imagen-noticia1">
+            <div class="girador">
+                
+                <div class="frente">
+                    <div class="contenido_frente">
+                        <p class="texto_frente">
+                            
+                             PEOPLE
+                        </p>
+                        <p class="texto_fente_abajo">
+                             Conoce a la gente que hace esto
+                        </p>
+                    </div>
+                </div>
+                <div class="atras">
+                    <div class="contenido_atras">
+                        <p class="texto_atras">VER GENTE</p>
+                    </div>
+                </div>
+            </div>
+        </div>-->

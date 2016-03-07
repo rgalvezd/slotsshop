@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Slot Shop</title>
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        
+        <!-- BootStrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="/slotsshop/css/main.css">
+        
+         <!--Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Amaranth:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        
+        <!--JS-->
+        <script src="/slotsshop/js/main.js"></script>
+        
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+               <div class="navbar-header">
+                    <div class="pull-left">
+                        <a href="/slotsshop"><img src="logo_slot3.svg" alt="logo"></a>
+                    </div>
+                    <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+               </div>
+                <!--Nav secciones-->
+                <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+                    <li><a href='/slotsshop'>Noticias</a></li>
+                    <li><a href="#" class="dropdown-toggle" id="menu-comp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Competici&oacute;n<span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="menu-comp">
+                            <li><a href="#">Circuito</a></li>
+                            <li><a href="#">Rally</a></li>
+                            <li><a href="#">Raid</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='#'>Contacto</a></li>
+                </ul>
+              
+                <hr class="hidden-sm-down">
+                <br>
+                
+                <!--Nav productos-->
+                <ul class='nav nav-pills nav-justified collapse navbar-collapse'>
+                    <li><a class="anchor" href='/slotsshop/tienda.html#ninco'>Ninco</a></li>
+                    <li><a class="anchor" href='/slotsshop/tienda.html#slotit'>Slot.it</a></li>
+                    <li><a class="anchor" href='/slotsshop/tienda.html#scalextric'>Scalextric</a></li>
+                    <li><a class="anchor" href='/slotsshop/tienda.html#circuitos'>Circuitos</a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" id="menu-cars" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Coches<span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="menu-cars">
+                            <li><a class="anchor" href="/slotsshop/tienda.html#coches">Circuito</a></li>
+                            <li><a class="anchor" href="/slotsshop/tienda.html#coches">Rally</a></li>
+                            <li><a class="anchor" href="/slotsshop/tienda.html#coches">Raid</a></li>
+                        </ul>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+        <!--FIN Header-->
+        
+        <div id="cover"></div>
+        
+        <div class="container" id="cart">
+            <div class="well well-lg">
+                <div class="row" id="cart-header">
+                    <div class="page-header">
+                        <h2>Productos a&ntilde;adidos a la cesta</h2>
+                    </div>
+                </div>
+                <a href="/slotsshop/tienda.html" class="btn btn-primary pull-right">Seguir comprando</a>
+                <div class="clearfix"></div>
+                <div id="cart-items" class="container-fluid">
+                                        
+                    <div id="2" class="row line-order">
+                        <div class="hidden-xs col-sm-2">
+                            <div class="thumbnail">
+                                <a href="/slotsshop/productos/circuitos/6.html"><img src="img/circuitos/cc6/1.jpg" alt="circuito 6"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 nombre">
+                            <h3>C1 F1 Speed Limit</h3>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 unidades">
+                            <button class="btn btn-sm btn-primary minus"><i class="glyphicon glyphicon-minus"></i></button>
+                            <input  class="units" type="text" size="2" value="1">
+                            <button class="btn btn-sm btn-primary plus"><i class="glyphicon glyphicon-plus"></i></button>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 importe">
+                           
+                             <div class="col-xs-offset-1 col-xs-11">
+                                <span class="pull-left im">120.00</span>&#128;
+                                
+                                <button class="btn btn-xs btn-danger pull-right del-item"><i class="glyphicon glyphicon-remove"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="2" class="row line-order">
+                        <div class="hidden-xs col-sm-2">
+                            <div class="thumbnail">
+                                <a href="/slotsshop/productos/coches/scalextric/1.html"><img src="img/coches/scalextric/c1/1.jpg" alt="scalextric 1"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 nombre">
+                            <h3>Pack 2-Coches Surtido (Porsche 911 GT3) Rally Champ</h3>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 unidades">
+                            <button class="btn btn-sm btn-primary minus"><i class="glyphicon glyphicon-minus"></i></button>
+                            <input  class="units" type="text" size="2" value="2">
+                            <button class="btn btn-sm btn-primary plus"><i class="glyphicon glyphicon-plus"></i></button>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 importe">
+                           
+                             <div class="col-xs-offset-1 col-xs-11">
+                                <span class="pull-left im">49.95</span>&#128;
+                                
+                                <button class="btn btn-xs btn-danger pull-right del-item"><i class="glyphicon glyphicon-remove"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="2" class="row line-order">
+                        <div class="hidden-xs col-sm-2">
+                            <div class="thumbnail">
+                                <a href="/slotsshop/productos/coches/otros/2.html"><img src="img/coches/otros/c2/1.jpg" alt="otros 2"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 nombre">
+                            <h3>PUNTO S2000 18 Rally de la Vila Joiosa 2008</h3>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 unidades">
+                           <button class="btn btn-sm btn-primary minus"><i class="glyphicon glyphicon-minus"></i></button>
+                            <input  class="units" type="text" size="2" value="4">
+                            <button class="btn btn-sm btn-primary plus"><i class="glyphicon glyphicon-plus"></i></button>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 importe">
+                           
+                             <div class="col-xs-offset-1 col-xs-11">
+                                <span class="pull-left im">36.90</span>&#128;
+                                
+                                <button class="btn btn-xs btn-danger pull-right del-item"><i class="glyphicon glyphicon-remove"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="2" class="row line-order">
+                        <div class="hidden-xs col-sm-2">
+                            <div class="thumbnail">
+                                <a href="/slotsshop/productos/coches/otros/3.html"><img src="img/coches/otros/c3/1.jpg" alt="otros 3"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 nombre">
+                            <h3>Punto S2000 Rally de Portugal 2008</h3>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 unidades">
+                            <button class="btn btn-sm btn-primary minus"><i class="glyphicon glyphicon-minus"></i></button>
+                            <input  class="units" type="text" size="2" value="3">
+                            <button class="btn btn-sm btn-primary plus"><i class="glyphicon glyphicon-plus"></i></button>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 importe">
+                           
+                             <div class="col-xs-offset-1 col-xs-11">
+                                <span class="pull-left im">11.95</span>&#128;
+                                
+                                <button class="btn btn-xs btn-danger pull-right del-item"><i class="glyphicon glyphicon-remove"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="2" class="row line-order">
+                        <div class="hidden-xs col-sm-2">
+                            <div class="thumbnail">
+                                <a href="/slotsshop/productos/coches/slotit/2.html"><img src="img/coches/slotit/c2/1.jpg" alt="slotit 2"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 nombre">
+                            <h3>Lola Aston Martin DBR1-2</h3>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 unidades">
+                            <button class="btn btn-sm btn-primary minus"><i class="glyphicon glyphicon-minus"></i></button>
+                            <input  class="units" type="text" size="2" value="1">
+                            <button class="btn btn-sm btn-primary plus"><i class="glyphicon glyphicon-plus"></i></button>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 importe">
+                           
+                             <div class="col-xs-offset-1 col-xs-11">
+                                <span class="pull-left im">54.00</span>&#128;
+                                
+                                <button class="btn btn-xs btn-danger pull-right del-item"><i class="glyphicon glyphicon-remove"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="2" class="row line-order">
+                        <div class="hidden-xs col-sm-2">
+                            <div class="thumbnail">
+                                <a href="/slotsshop/productos/coches/slotit/6.html"><img src="img/coches/slotit/c6/1.jpg" alt="slotit 6"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 nombre">
+                            <h3>Nissan R89C</h3>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 unidades">
+                            <button class="btn btn-sm btn-primary minus"><i class="glyphicon glyphicon-minus"></i></button>
+                            <input  class="units" type="text" size="2" value="1">
+                            <button class="btn btn-sm btn-primary plus"><i class="glyphicon glyphicon-plus"></i></button>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 importe">
+                           
+                             <div class="col-xs-offset-1 col-xs-11">
+                                <span class="pull-left im">49.95</span>&#128;
+                                
+                                <button class="btn btn-xs btn-danger pull-right del-item"><i class="glyphicon glyphicon-remove"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="2" class="row line-order">
+                        <div class="hidden-xs col-sm-2">
+                            <div class="thumbnail">
+                                <a href="/slotsshop/productos/circuitos/4.html"><img src="img/circuitos/cc4/1.jpg" alt="circuito 4"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 nombre">
+                            <h3>C2 Rally X-Treme</h3>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 unidades">
+                            <button class="btn btn-sm btn-primary minus"><i class="glyphicon glyphicon-minus"></i></button>
+                            <input  class="units" type="text" size="2" value="1">
+                            <button class="btn btn-sm btn-primary plus"><i class="glyphicon glyphicon-plus"></i></button>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 importe">
+                           
+                             <div class="col-xs-offset-1 col-xs-11">
+                                <span class="pull-left im">130.00</span>&#128;
+                                
+                                <button class="btn btn-xs btn-danger pull-right del-item"><i class="glyphicon glyphicon-remove"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="2" class="row line-order">
+                        <div class="hidden-xs col-sm-2">
+                            <div class="thumbnail">
+                                <a href="/slotsshop/productos/circuitos/1.html"><img src="img/circuitos/cc1/1.jpg" alt="circuito 1"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 nombre">
+                            <h3>C2 Moto GP</h3>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 unidades">
+                            <button class="btn btn-sm btn-primary minus"><i class="glyphicon glyphicon-minus"></i></button>
+                            <input  class="units" type="text" size="2" value="1">
+                            <button class="btn btn-sm btn-primary plus"><i class="glyphicon glyphicon-plus"></i></button>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 importe">
+                           
+                             <div class="col-xs-offset-1 col-xs-11">
+                                <span class="pull-left im">119.95</span>&#128;
+                                
+                                <button class="btn btn-xs btn-danger pull-right del-item"><i class="glyphicon glyphicon-remove"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="total" class="pull-right">
+                    <hr>
+                    <h3>Total: <span id="imt">500,87</span>&#128;</h3>
+                    <button class="btn btn-success pull-right">Realizar compra</button>
+                </div>
+                <div class="clearfix"></div>
+                <a href="/slotsshop/tienda.html" class="btn btn-primary pull-right">Seguir comprando</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+       
+    </body>
+</html>

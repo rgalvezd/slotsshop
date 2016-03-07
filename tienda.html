@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Slot Shop</title>
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        
+        <!-- BootStrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="/slotsshop/css/main.css">
+        
+         <!--Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Amaranth:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        
+        <!--JS-->
+        <script src="/slotsshop/js/tienda.js"></script>
+        
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+               <div class="navbar-header">
+                    <div class="pull-left">
+                        <a href="/slotsshop"><img src="logo_slot3.svg" alt="logo"></a>
+                    </div>
+                    <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+               </div>
+                <!--Nav secciones-->
+                <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+                    <li><a href='/slotsshop'>Noticias</a></li>
+                    <li><a href="#" class="dropdown-toggle" id="menu-comp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Competici&oacute;n<span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="menu-comp">
+                            <li><a href="#">Circuito</a></li>
+                            <li><a href="#">Rally</a></li>
+                            <li><a href="#">Raid</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='#'>Contacto</a></li>
+                </ul>
+              
+                <hr class="hidden-sm-down">
+                <br>
+                
+                <!--Nav productos-->
+                <ul class='nav nav-pills nav-justified collapse navbar-collapse'>
+                    <li><a class="anchor" href='/slotsshop/tienda.html#ninco'>Ninco</a></li>
+                    <li><a class="anchor" href='/slotsshop/tienda.html#slotit'>Slot.it</a></li>
+                    <li><a class="anchor" href='/slotsshop/tienda.html#scalextric'>Scalextric</a></li>
+                    <li><a class="anchor" href='/slotsshop/tienda.html#circuitos'>Circuitos</a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" id="menu-cars" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Coches<span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="menu-cars">
+                            <li><a class="anchor" href="/slotsshop/tienda.html#coches">Circuito</a></li>
+                            <li><a class="anchor" href="/slotsshop/tienda.html#coches">Rally</a></li>
+                            <li><a class="anchor" href="/slotsshop/tienda.html#coches">Raid</a></li>
+                        </ul>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+        <!--FIN Header-->
+        
+        <div id="cover"></div>
+        
+        <div class="container" id="tienda">
+            <div class="well well-lg">
+              
+                <div class="row col-xs-12">
+                    <ol class="breadcrumb pull-left">
+                        <li><a href="/slotsshop/tienda.html">Tienda</a></li>
+                    </ol>
+                    <a href="/slotsshop/cart.html" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-shopping-cart"></i> Cesta</a>
+                </div>
+                <div class="container-fluid">
+                    <div class="col-xs-12 col-md-3">
+                        <h3>Filtros</h3>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><a data-toggle="collapse" href="#brand-filter">Marca</a></h3>
+                            </div>
+                            <div id="brand-filter" class="panel-body collapse">
+                                <label for="todos">Todos</label><input class="pull-right" type="checkbox" checked id="all-brands" name="todos"><br>
+                                <label for="ninco">Ninco</label><input class="pull-right" type="checkbox" id="ninco" name="ninco"><br>
+                                <label for="slotit">Slot.it</label><input class="pull-right" type="checkbox" id="slotit" name="slotit"><br>
+                                <label for="scalextric">Scalextric</label><input class="pull-right" type="checkbox" id="scalextric" name="scalextric"><br>
+                                <label for="otros">Otros</label><input class="pull-right" type="checkbox" id="otros"name="otros">
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><a data-toggle="collapse" href="#type-filter">Tipo</a></h3>
+                            </div>
+                            <div id="type-filter" class="panel-body collapse">
+                                <label for="todos">Todos</label><input class="pull-right" type="checkbox" checked id="all-types" name="todos"><br>
+                                <label for="coches">Coches</label><input class="pull-right" type="checkbox" id="coches" name="coches"><br>
+                                <label for="circuitos">Circuitos</label><input class="pull-right" type="checkbox" id="circuitos" name="circuitos"><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-9">
+                        <h3 class="pull-right">Productos</h3>
+                        <div class="clearfix"></div>
+                        <hr>
+                         <!--circuitos-->
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item circuito scalextric">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/circuitos/1.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/circuitos/cc1/1.jpg" alt="Circuito C2 Motop GP">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/circuitos/1.html" class="btn btn-link item-title">C2 Motop GP</a>
+                                    <label class="precio">119.95&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item circuito scalextric">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/circuitos/2.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/circuitos/cc2/1.jpg" alt="circuito C3 Adrenaline Cup">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/circuitos/2.html" class="btn btn-link item-title">C3 Adrenaline Cup</a>
+                                    <label class="precio">169.95&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item circuito scalextric">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/circuitos/3.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/circuitos/cc3/1.jpg" alt="circuito C3 Rally de Suecia">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/circuitos/3.html" class="btn btn-link item-title">C3 Rally de Suecia</a>
+                                    <label class="precio">154.95&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item circuito scalextric">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/circuitos/4.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/circuitos/cc4/1.jpg" alt="circuito C2 Rally X-Treme">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/circuitos/4.html" class="btn btn-link item-title">C2 Rally X-Treme</a>
+                                    <label class="precio">130.00&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item circuito scalextric">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/circuitos/5.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/circuitos/cc5/1.jpg" alt="circuito C1 GT Racing">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/circuitos/5.html" class="btn btn-link item-title">C1 GT Racing</a>
+                                    <label class="precio">122.95&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item circuito scalextric">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/circuitos/6.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/circuitos/cc6/1.jpg" alt="circuito C1 F1 Speed Limit">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/circuitos/6.html" class="btn btn-link item-title">C1 F1 Speed Limit</a>
+                                    <label class="precio">120.00&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--coches-->
+                        <!--ninco-->
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item coche ninco">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/coches/ninco/1.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/coches/ninco/c1/1.jpg" alt="coche ninco Ford Sierra Texaco">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/coches/ninco/1.html" class="btn btn-link item-title">Ford Sierra Texaco</a>
+                                    <label class="precio">45.00&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--otros-->
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item coche otro">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/coches/otros/1.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/coches/otros/c1/1.jpg" alt="coche otros 250LM 12H Sebring 1965">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/coches/otros/1.html" class="btn btn-link item-title">250LM 12H Sebring 1965</a>
+                                    <label class="precio">53.92&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item coche otro">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/coches/otros/2.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/coches/otros/c2/1.jpg" alt="coche otros Punto S2000 18 Rally de Vila Joiosa 2008">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/coches/otros/2.html" class="btn btn-link item-title">Punto S2000 18 Rally de Vila Joiosa 2008</a>
+                                    <label class="precio">36.90&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item coche otro">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/coches/otros/3.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/coches/otros/c3/1.jpg" alt="coche otros Punto S2000 Rally de Portugal 2008">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/coches/otros/3.html" class="btn btn-link item-title">Punto S2000 Rally de Portugal 2008</a>
+                                    <label class="precio">11.95&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--scalextric-->
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item coche scalextric">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/coches/scalextric/1.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/coches/scalextric/c1/1.jpg" alt="coche scalextric Pack 2-Coches Surtido (Porsche 911 GT3) Rally Champ">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/coches/scalextric/1.html" class="btn btn-link item-title">Pack 2-Coches Surtido (Porsche 911 GT3) Rally Champ</a>
+                                    <label class="precio">49.95&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item coche scalextric">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/coches/scalextric/2.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/coches/scalextric/c2/1.jpg" alt="coche scalextric Pack 2-Coches Surtido (F1 McLaren Magnussen)">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/coches/scalextric/2.html" class="btn btn-link item-title">Pack 2-Coches Surtido (F1 McLaren Magnussen)</a>
+                                    <label class="precio">49.95&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item coche scalextric">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/coches/scalextric/3.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/coches/scalextric/c3/1.jpg" alt="coche scalextric Pack 2-Coches Surtido (F1 McLaren Button)">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/coches/scalextric/3.html" class="btn btn-link item-title">Pack 2-Coches Surtido (F1 McLaren Button)</a>
+                                    <label class="precio">49.95&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--slot it-->
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item coche slotit">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/coches/slotit/1.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/coches/slotit/c1/1.jpg" alt="coche slotit Ford GT40 9 Gulf LeMans Winner">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/coches/slotit/1.html" class="btn btn-link item-title">Ford GT40 9 Gulf LeMans Winner</a>
+                                    <label class="precio">53.00&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item coche slotit">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/coches/slotit/2.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/coches/slotit/c2/1.jpg" alt="coche slotit Lola Aston Martin DBR1-2">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/coches/slotit/2.html" class="btn btn-link item-title">Lola Aston Martin DBR1-2</a>
+                                    <label class="precio">54.00&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item coche slotit">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/coches/slotit/3.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/coches/slotit/c3/1.jpg" alt="coche slotit Toyota 88C STP WEC">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/coches/slotit/3.html" class="btn btn-link item-title">Toyota 88C STP WEC</a>
+                                    <label class="precio">59.95&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item coche slotit">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/coches/slotit/4.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/coches/slotit/c4/1.jpg" alt="coche slotit Nissan R390 GT1 LeMans 1998">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/coches/slotit/4.html" class="btn btn-link item-title">Nissan R390 GT1 LeMans 1998</a>
+                                    <label class="precio">39.95&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item coche slotit">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/coches/slotit/5.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/coches/slotit/c5/1.jpg" alt="coche slotit McLaren F1 GTR Gulf 24h LeMans 1997">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/coches/slotit/5.html" class="btn btn-link item-title">McLaren F1 GTR Gulf 24h LeMans 1997</a>
+                                    <label class="precio">49.95&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item coche slotit">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/coches/slotit/6.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/coches/slotit/c6/1.jpg" alt="coche slotit Nissan R89C">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/coches/slotit/6.html" class="btn btn-link item-title">Nissan R89C</a>
+                                    <label class="precio">49.95&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buy-item coche slotit">
+                            <div class="panel panel-default">
+                                <a href="/slotsshop/productos/coches/slotit/7.html">
+                                    <div class="panel-body">
+                                        <div class="thumbnail">
+                                            <img src="img/coches/slotit/c7/1.jpg" alt="coche slotit Matra Simca MS670B">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="panel-footer">
+                                    <a href="/slotsshop/productos/coches/slotit/7.html" class="btn btn-link item-title">Matra Simca MS670B</a>
+                                    <label class="precio">54.95&#128;</label>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                    
+                </div>
+            </div>
+       
+    </body>
+</html>

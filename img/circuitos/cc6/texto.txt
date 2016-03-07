@@ -1,0 +1,4 @@
+C1 F1 Speed Limit
+ref ES:A10063S500
+ref MX:A10063S5M0
+Circuito Scalextric de 3,5 metros con coches F1. Escala 1:32, analógico. Competición y diversión aseguradas.
